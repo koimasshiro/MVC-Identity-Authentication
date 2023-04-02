@@ -161,7 +161,8 @@ body {
 .formInput:focus + .control-label, .formInput:valid + .control-label {
     top: -1.5rem;
     font-size: 12px;
-    color: #333;
+    outline: none;
+    border-bottom: 1px solid lightblue;
 }
 .formInput {
     width: 100%;

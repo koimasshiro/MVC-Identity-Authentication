@@ -151,13 +151,17 @@ body {
 #registerForm p {
     text-align: center;
 }
-.control-label{
+.control-label {
     position: relative;
+    transition: all 0.3s ease;
     top: 40px;
     right: 20px;
+    transition: all 0.2s ease-in-out;
 }
-.control-label:focus{
-    display: none;
+.formInput:focus + .control-label, .formInput:valid + .control-label {
+    top: -1.5rem;
+    font-size: 12px;
+    color: #333;
 }
 .formInput {
     width: 100%;
@@ -168,6 +172,8 @@ body {
     border-bottom: 1px solid black;
 }
 .formInput:focus {
+    top: -20px;
+    left: 0;
     outline: none;
     border-bottom: 1px solid lightblue;
 }

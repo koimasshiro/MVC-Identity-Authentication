@@ -39,14 +39,14 @@
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <i class="fa-duotone fa-eye-slash"></i>
+                <i class="fa-solid fa-lock icon"></i>
                 <label asp-for="Input.Password" class="control-label">Password</label>
                 <input asp-for="Input.Password" class="formInput" />
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
             <div class="form-group">
-                    <i class="fa-duotone fa-eye-slash"></i>
-                    <label asp-for="Input.ConfirmPassword" class="control-label">Confirm Password</label>
+                <i class="fa-solid fa-lock icon"></i>
+                <label asp-for="Input.ConfirmPassword" class="control-label">Confirm Password</label>
                 <input asp-for="Input.ConfirmPassword" class="formInput" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
@@ -54,8 +54,8 @@
                 <button id="registerSubmit" type="submit" class="btn">Sign Up</button>
             </div>
             <p><a class="nav-link" id="login" asp-area="Identity" asp-page="/Account/Login">Already have an account? Log in</a></p>
-            <p><a class="nav-link" id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a></p>
-            </form>
+@*            <p><a class="nav-link" id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a></p>
+*@            </form>
          </div>
     </div>
     

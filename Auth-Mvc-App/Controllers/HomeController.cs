@@ -1,4 +1,5 @@
-﻿using Auth_Mvc_App.Models;
+﻿
+using Auth_Mvc_App.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -18,6 +19,10 @@ namespace Auth_Mvc_App.Controllers
             return View();
         }
 
+        public IActionResult Products()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

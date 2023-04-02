@@ -1,43 +1,62 @@
 ﻿@page
 @model RegisterModel
 @{
-    ViewData["Title"] = "create a new account";
+    ViewData["Title"] = "Create a new account";
 }
 
-<h1>@ViewData["Title"]</h1>
 
 <div class="row">
-    <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <hr />
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-floating">
-                <input asp-for="Input.FirstName" class="form-control" autocomplete="firstname" aria-required="true" />
-                <label asp-for="Input.FirstName"></label>
+    <div class="left">
+        <img src="~/lib/images/360_f_305434309_0mgfzzm1rvstoymlorxw4d5dvmke2rrs.jpg" class="signup-img" />
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/lib/images/shopit logo.png" class="brand" /></a>
+        <div class="text-item">
+            <h2>Never miss out on a sale again!</h2>
+            <p>Sign up now to receive personalized<br /> promotions and offers.</p>
+        </div>
+
+    </div>
+    <div class="col-md-4 centered-container">
+        <div class="form-box">
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <h2 class="title">@ViewData["Title"]</h2>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <i class="fa-regular fa-user icon"></i>
+                <label asp-for="Input.FirstName" class="control-label">First Name</label>
+                <input asp-for="Input.FirstName" class="formInput" />
                 <span asp-validation-for="Input.FirstName" class="text-danger"></span>
             </div>
-            <div class="form-floating">
-                <input asp-for="Input.LastName" class="form-control" autocomplete="lastname" aria-required="true" />
-                <label asp-for="Input.LastName"></label>
+            <div class="form-group">
+                <i class="fa-regular fa-user icon"></i>
+                <label asp-for="Input.LastName" class="control-label">Last Name</label>
+                <input asp-for="Input.LastName" class="formInput" />
                 <span asp-validation-for="Input.LastName" class="text-danger"></span>
             </div>
-            <div class="form-floating">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.Email"></label>
+            <div class="form-group">
+                <i class="fa-regular fa-envelope icon"></i>
+                <label asp-for="Input.Email" class="control-label">Email</label>
+                <input asp-for="Input.Email" class="formInput" />
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
-            <div class="form-floating">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.Password"></label>
+            <div class="form-group">
+                <i class="fa-duotone fa-eye-slash"></i>
+                <label asp-for="Input.Password" class="control-label">Password</label>
+                <input asp-for="Input.Password" class="formInput" />
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
-            <div class="form-floating">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.ConfirmPassword"></label>
+            <div class="form-group">
+                    <i class="fa-duotone fa-eye-slash"></i>
+                    <label asp-for="Input.ConfirmPassword" class="control-label">Confirm Password</label>
+                <input asp-for="Input.ConfirmPassword" class="formInput" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
-        </form>
+            <div>
+                <button id="registerSubmit" type="submit" class="btn">Sign Up</button>
+            </div>
+            <p><a class="nav-link" id="login" asp-area="Identity" asp-page="/Account/Login">Already have an account? Log in</a></p>
+            <p><a class="nav-link" id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a></p>
+            </form>
+         </div>
     </div>
     
 </div>

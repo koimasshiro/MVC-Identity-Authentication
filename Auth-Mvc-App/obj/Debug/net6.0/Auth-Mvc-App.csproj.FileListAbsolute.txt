@@ -279,3 +279,4 @@ C:\Users\quan\Desktop\Auth-Mvc-App\Auth-Mvc-App\Auth-Mvc-App\bin\Debug\net6.0\ru
 C:\Users\quan\Desktop\Auth-Mvc-App\Auth-Mvc-App\Auth-Mvc-App\obj\Debug\net6.0\Auth-Mvc-App.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\quan\Desktop\Auth-Mvc-App\Auth-Mvc-App\Auth-Mvc-App\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Facebook.dll
 C:\Users\quan\Desktop\Auth-Mvc-App\Auth-Mvc-App\Auth-Mvc-App\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\quan\Desktop\Auth-Mvc-App\Auth-Mvc-App\Auth-Mvc-App\bin\Debug\net6.0\libman.json
